@@ -169,6 +169,7 @@ nav {
 .features-section-img img {
     width: 500px;
     height: 90%;
+    margin: 0 auto;
 }
 
 .ten-years-experience {
@@ -254,7 +255,7 @@ footer {
     padding: 40px 40px;
 }
 
-.footer-content {
+ footer .footer-content {
     color:#424242;
     text-align: center;
     font-size: 1.5rem;
@@ -287,7 +288,8 @@ footer {
 
     header,
     main,
-    footer {
+    footer
+    {
         padding: 20px;
     }
 
@@ -314,6 +316,9 @@ footer {
     {
         margin: 0;
     }
+    .sponspors-section {
+        margin: 10px 0;
+    }
 
     .teams-container .teams-card-img {
         grid-template-columns: 1fr;
@@ -321,6 +326,7 @@ footer {
 
     .features-section-img img {
         width: 330px;
+        margin: 0 auto;
     }
 
     .ten-years-experience {
@@ -349,7 +355,8 @@ footer {
 
     header,
     main,
-    footer {
+    footer
+    {
         padding: 20px;
     }
 
