@@ -34,6 +34,12 @@ main {
     padding: 0 100px;
 }
 
+.section-title {
+    color: #131313;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
 /* Header Section */
 header {
     background: rgba(255, 144, 14, 0.10);
@@ -105,7 +111,7 @@ nav {
 }
 
 .teams-title {
-    color:#131313;
+    color: #131313;
     font-size: 3rem;
     font-weight: 700;
 }
@@ -120,10 +126,74 @@ nav {
     font-weight: 700;
 }
 
+/* Features Section Styles */
+.features-section-container {
+    margin: 100px 0;
+    display: flex;
+    gap: 50px;
+}
+
+.features-section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.features-card {
+    margin-bottom: 30px;
+    width: 600px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+}
+
+.features-card-title {
+    color: #131313;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.features-card-description {
+    font-size: 1rem;
+    color: #727272;
 
 
 
+    font-weight: 400;
+    line-height: 26px;
 
+}
+
+
+
+.features-section-img img {
+    width: 500px;
+    height: 90%;
+}
+
+.ten-years-experience {
+    width: 300px;
+    border-radius: 8px;
+    background: #FF900E;
+    color: #fff;
+    text-align: center;
+    padding: 40px 30px;
+    position: relative;
+    bottom: 100px;
+    right: 20px;
+}
+
+.ten-years-experience h3 {
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.ten-years-experience p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 40px;
+}
 
 
 /* Media Queries */
@@ -133,7 +203,8 @@ nav {
 
     nav,
     .nav-menu,
-    .teams-container {
+    .teams-container,
+    .features-section-container {
         flex-direction: column;
     }
 
@@ -143,7 +214,8 @@ nav {
     }
 
     .banner-content,
-    .teams-card-img img {
+    .teams-card-img img,
+    .features-card {
         width: 100%;
     }
 
@@ -162,16 +234,28 @@ nav {
     .teams-container {
         margin: 0;
     }
+
     .teams-container .teams-card-img {
         grid-template-columns: 1fr;
     }
 
+    .features-section-img img {
+        width: 330px;
+    }
+    .ten-years-experience {
+        margin: auto;
+        position: relative;
+        bottom: 10px;
+        right: 0;
+    }
 }
 
 /* lablat or medum device */
 @media screen and (min-width: 576px) and (max-width: 960px) {
+
     nav,
-    .teams-container {
+    .teams-container,
+    .features-section-container {
         flex-direction: column;
     }
 
@@ -184,10 +268,19 @@ nav {
         padding: 20px;
     }
 
-    .banner-content {
+    .banner-content,
+    .features-section-img img
+        {
         width: 100%;
     }
+
     .teams-container {
         margin: 0;
+    }
+    .ten-years-experience {
+        margin: auto;
+        position: relative;
+        bottom: 40px;
+        right: 0;
     }
 }
